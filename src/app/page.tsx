@@ -2,9 +2,10 @@ import { LoadMoreButton } from "./LoadMoreButton";
 import { Card } from "./Card";
 import { List } from "./List";
 import { getItems } from "./getItems";
+import { ITEM_LIMIT } from "./constants";
 
 export default async function Home() {
-  const items = await getItems({ limit: 12, offset: 0 });
+  const items = await getItems({ limit: ITEM_LIMIT, offset: 0 });
   return (
     <main>
       <div className="p-4">
@@ -16,7 +17,7 @@ export default async function Home() {
               </li>
             );
           })}
-          <List initialOffset={12} />
+          <List initialOffset={ITEM_LIMIT} />
         </ul>
       </div>
     </main>
