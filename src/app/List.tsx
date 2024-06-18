@@ -52,7 +52,7 @@ export const List = ({ initialOffset }: { initialOffset: number }) => {
     }
 
     const options: IntersectionObserverInit = {
-      rootMargin: "400px",
+      rootMargin: "100%",
       threshold: 0,
     };
 

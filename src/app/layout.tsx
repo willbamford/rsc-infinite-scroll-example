@@ -17,7 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-slate-200 p-12 text-3xl">
+        <div
+          className="bg-slate-200 py-6 px-4 text-3xl sticky top-0"
+          style={{ opacity: 0.9 }}
+        >
           React Server Components <strong>Infinite Scroll Example</strong>
         </div>
         {children}
